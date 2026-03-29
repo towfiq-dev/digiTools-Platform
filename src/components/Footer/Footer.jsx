@@ -4,7 +4,7 @@ const Footer = () => {
   return (
 <footer className='bg-[#101727]'>
   <section className="footer sm:footer-horizontal p-10 justify-between max-w-310 mx-auto">
-    <aside>
+  <aside>
     <h2 className='text-2xl font-bold text-white'>DigiTools</h2>
     <p className='max-w-70 text-[#A1A1AA]'>
       Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
@@ -70,7 +70,7 @@ const Footer = () => {
     </div>
   </nav>
   </section>
-  <aside className='flex justify-around items-center  py-5 text-white max-w-310 mx-auto border-t-gray-500 border-t'>
+  <aside className='flex justify-around items-center  py-5 text-white max-w-310 mx-auto border-t-gray-500 border-t flex-wrap gap-4'>
     <p>Copyright © {new Date().getFullYear()} -Digitools. All rights reserved.</p>
     <ul className='flex gap-6'>
       <li>Privacy Policy</li>
