@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Banner from './components/Banner/Banner';
 import StatsSection from './components/StatsSection/StatsSection';
 import Footer from './components/Footer/Footer';
+import Workflow from './components/Workflow/Workflow';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Navbar></Navbar>
       <Banner></Banner>
       <StatsSection></StatsSection>
+      <Workflow></Workflow>
       <Footer></Footer>
     </div>
   );
