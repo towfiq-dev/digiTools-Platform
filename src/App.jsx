@@ -8,14 +8,21 @@ import Workflow from './components/Workflow/Workflow';
 import Steps from './components/Steps/Steps';
 import Products from './components/Premium Tools/Products/Products';
 import Carts from './components/Premium Tools/Carts/Carts';
+import Cards from './components/PricingCards/Cards/Cards';
 
 
 const productsFetch = async()=>{
   const jsonRes = await fetch('products.json') 
   return jsonRes.json()
 }
+
+const cardsFetch = async()=>{
+  const cardsRes = await fetch('pricing.json')
+  return cardsRes.json()
+}
 const App = () => {
   const productsPromise = productsFetch()
+  const cardsPromise = cardsFetch()
   const [activeBtn, setActiveBtn] = useState(false)
   const toolBtn = (status) => {
   setActiveBtn(status);
@@ -74,6 +81,11 @@ const [addCarts, setAddCarts] = useState([])
       }
       
       <Steps></Steps>
+      <Suspense>
+      <Cards 
+      cardsPromise ={cardsPromise}
+      ></Cards>
+      </Suspense>
       <Workflow></Workflow>
       <Footer></Footer>
     </div>
