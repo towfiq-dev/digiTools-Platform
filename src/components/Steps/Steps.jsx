@@ -35,7 +35,7 @@ const Steps = () => {
       </div>
     </div>
 
-    {/* Step 02 */}
+
     <div className="card bg-base-100 shadow-xl border border-gray-100 relative overflow-visible w-full max-w-sm">
       <div className='absolute top-4 right-4 h-10 w-10 bg-[#9514fa] text-white rounded-full flex items-center justify-center font-bold shadow-lg'>
         02
@@ -55,7 +55,7 @@ const Steps = () => {
       </div>
     </div>
 
-    {/* Step 03 */}
+
     <div className="card bg-base-100 shadow-xl border border-gray-100 relative overflow-visible w-full max-w-sm">
       <div className='absolute top-4 right-4 h-10 w-10 bg-[#9514fa] text-white rounded-full flex items-center justify-center font-bold shadow-lg'>
         03

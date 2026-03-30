@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 import Features from './Features';
+import { toast } from 'react-toastify';
 
-const Product = ({productData}) => {
+const Product = ({productData, addCarts, setAddCarts}) => {
   const {name, image, description, price, period, tag, tagtype, features, icon} = productData
   const [isBuy, setIsBuy] = useState(false)
   const buyNow=()=>{
     setIsBuy(true)
+    toast.success('Add to Cart Successfully')
+    setAddCarts([...addCarts, productData])
   }
   return (
-    <div className='bg-amber-100 rounded py-5 px-3 space-y-4'>
+    <div className='bg-gray-100 rounded-xl py-5 px-3 space-y-4'>
       <div className='flex justify-between items-center'>
-      <img className='w-10 h-10 ml-2 mt-2 rounded-full' src={image} alt="" />
+      <img className='w-10 h-10 ml-2 mt-2 rounded-full' src={image} alt=""/>
       <p className='border px-2 py-1.5 rounded-3xl mt-[-17px]'>{tag}</p>
       </div>
       <h2 className='text-[20px] font-bold'>{name}</h2>
