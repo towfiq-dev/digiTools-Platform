@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "AI Writing Pro",
-    "image": "https://example.com/images/ai-writing.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjOWWpUjiSdZEKkXQCuHJ0fPSezqJheY2_ow&s",
     "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
     "price": 29,
     "period": "monthly",
@@ -27,7 +27,7 @@
     "id": 3,
     "name": "Premium Stock Assets",
     "image": "https://example.com/images/stock-assets.png",
-    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "description": "Access millions of royalty-free photos, videos, animation and graphics for your projects.",
     "price": 19,
     "period": "monthly",
     "tag": "New",

@@ -9,7 +9,7 @@ const Banner = () => {
     <img className='w-150 h-auto border-gray-400 border rounded-xl' src={Hero} alt="" />
     <div>
       <span className='text-[14px] flex gap-2 w-68  justify-center bg-[#E1E7FF] py-2 px-4 rounded-full text-[linear-gradient(to_right,#4F39F6,#9514FA)] mb-3'>
-        <img className='w-5' h-5 src={Group} alt="" />
+        <img className='w-5 h-5' src={Group} alt="" />
         <p className= 'text-[#9514FA]'>New: AI-Powered Tools Available</p>
         </span>
       <h1 className="text-5xl font-bold">Supercharge Your <br/> Digital Workflow</h1>
