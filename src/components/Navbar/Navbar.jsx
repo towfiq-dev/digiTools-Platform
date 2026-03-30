@@ -2,7 +2,7 @@ import React from 'react';
 import NavbarLogo from '../../assets/navbarLogo.png'
 import CartIcon from '../../assets/cartIcon.png'
 
-const Navbar = () => {
+const Navbar = ({addCarts}) => {
   return (
     <header>
     <nav className="navbar bg-base-100 shadow-sm">
@@ -52,7 +52,10 @@ const Navbar = () => {
   </div>
   
   <div className="navbar-end gap-3">
+    <div>
+    <span className='bg-red-500 font-bold absolute -mt-2.5 ml-2 rounded-full px-1.5 text-[13px]'>{addCarts.length}</span>
     <img className="cursor-pointer w-5 h-5" src={CartIcon} alt="" />
+    </div>
     <a className="cursor-pointer">Login</a>
     <a className="btn rounded-full bg-[linear-gradient(to_right,#4F39F6,#9514FA)]">Get Started</a>
   </div>

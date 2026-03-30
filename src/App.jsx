@@ -21,11 +21,13 @@ const App = () => {
   setActiveBtn(status);
 };
 const [addCarts, setAddCarts] = useState([])
-console.log(addCarts);
 
   return (
-    <div>
-      <Navbar></Navbar>
+    <div fallback={<span className="loading loading-bars loading-xl duration-3000"></span>}>
+      <Navbar 
+      addCarts= {addCarts}
+      setAddCarts = {setAddCarts}
+      ></Navbar>
       <Banner></Banner>
       <StatsSection></StatsSection>
     <div className='text-center space-y-6 mb-10 mt-15'>
@@ -49,13 +51,15 @@ console.log(addCarts);
       'bg-[linear-gradient(to_right,#4F39F6,#9514FA)] text-white' 
       : 'bg-gray-200'}`}
   >
-    Cart (2)
+    Cart {addCarts.length}
   </button>
   </div>
     </div>
       {
         activeBtn === false?
-        <Suspense>
+        <Suspense 
+        fallback={<span className="loading loading-bars loading-xl"></span>}
+        >
       <Products 
       productsPromise ={productsPromise}
       addCarts= {addCarts}
