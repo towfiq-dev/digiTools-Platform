@@ -15,7 +15,7 @@ const Carts = ({addCarts, setAddCarts}) => {
       <p className="mb-3 font-semibold">Do you want to make the payment?</p>
       <div className="flex gap-2">
         <button
-          className="bg-green-500 text-white px-3 py-1 rounded text-sm"
+          className="bg-green-500 text-white px-3 py-1 cursor-pointer rounded text-sm"
           onClick={() => {
             setAddCarts([]);
             toast.success('Your Payment is Successfully done');
@@ -25,7 +25,7 @@ const Carts = ({addCarts, setAddCarts}) => {
           Yes
         </button>
         <button
-          className="bg-red-500 text-white px-3 py-1 rounded text-sm"
+          className="bg-red-500 text-white px-3 py-1 cursor-pointer rounded text-sm"
           onClick={()=>{
           toast.error('Your Payment is Cancel')
           closeToast();
@@ -75,7 +75,7 @@ const Carts = ({addCarts, setAddCarts}) => {
         </div>
         :
         <div>
-      <div className='flex justify-between items-center bg-amber-200 py-2 px-3 rounded-xl mb-3 font-bold'>
+      <div className='flex justify-between items-center bg-amber-100 py-2 px-3 rounded-xl mb-3 font-bold'>
       <p className='text-[20px]'>Total</p>
       <span className='text-2xl'>${totalPrice}</span>
       </div>

@@ -2,38 +2,39 @@ import React from 'react';
 
 const Footer = () => {
   return (
-<footer className='bg-[#101727]'>
-  <section className="footer sm:footer-horizontal p-10 justify-between max-w-310 mx-auto">
+<footer className='bg-[#101727] justify-between'>
+  <section className="flex flex-col md:flex-row gap-30 p-10 justify-between max-w-7xl mx-auto items-center md:items-start text-center md:text-left">
   <aside>
-    <h2 className='text-2xl font-bold text-white'>DigiTools</h2>
-    <p className='max-w-70 text-[#A1A1AA]'>
+    <h2 className='text-2xl font-bold text-white mb-4'>DigiTools</h2>
+    <p className='max-w-120 text-justify text-[#A1A1AA]'>
       Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
     </p>
   </aside>
-  <nav>
+  <div className='grid grid-cols-2 md:grid-cols-4 gap-8 md:10 w-full'>
+  <nav className='flex flex-col gap-2'>
     <h6 className=" text-[18px] text-white">Products</h6>
     <a className="link link-hover text-[#A1A1AA]">Features</a>
     <a className="link link-hover text-[#A1A1AA]">Pricing</a>
     <a className="link link-hover text-[#A1A1AA]">Templates</a>
     <a className="link link-hover text-[#A1A1AA]">Integration</a>
   </nav>
-  <nav>
+  <nav className='flex flex-col gap-2'>
     <h6 className=" text-[18px] text-white">Company</h6>
     <a className="link link-hover text-[#A1A1AA]">About us</a>
     <a className="link link-hover text-[#A1A1AA]">Blog</a>
     <a className="link link-hover text-[#A1A1AA]">Careers</a>
     <a className="link link-hover text-[#A1A1AA]">Press</a>
   </nav>
-  <nav>
+  <nav className='flex flex-col gap-2'>
     <h6 className=" text-[18px] text-white">Resources</h6>
     <a className="link link-hover text-[#A1A1AA]">Documentation</a>
     <a className="link link-hover text-[#A1A1AA]">Help Center</a>
     <a className="link link-hover text-[#A1A1AA]">Community</a>
     <a className="link link-hover text-[#A1A1AA]">Contact</a>
   </nav>
-   <nav>
+   <nav className='flex flex-col gap-2'>
     <h6 className=" text-[18px] text-white">Social Links</h6>
-    <div className="grid grid-flow-col gap-4">
+    <div className="grid grid-flow-col">
       <a className='cursor-pointer text-white'>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -69,6 +70,7 @@ const Footer = () => {
       </a>
     </div>
   </nav>
+  </div>
   </section>
   <aside className='flex justify-around items-center  py-5 text-white max-w-310 mx-auto border-t-gray-500 border-t flex-wrap gap-4'>
     <p>Copyright © {new Date().getFullYear()} -Digitools. All rights reserved.</p>

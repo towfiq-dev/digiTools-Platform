@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Design Templates Pack",
-    "image": "https://example.com/images/design-pack.png",
+    "image": "https://img.freepik.com/free-vector/brochure-colorful-template-design_52683-147720.jpg?semt=ais_incoming&w=740&q=80",
     "description": "2000+ premium templates for social media, presentations, and marketing materials.",
     "price": 49,
     "period": "one-time",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Premium Stock Assets",
-    "image": "https://example.com/images/stock-assets.png",
+    "image": "https://img.freepik.com/free-psd/3d-black-friday-cube-with-discount-percentage_314999-2591.jpg?semt=ais_hybrid&w=740&q=80",
     "description": "Access millions of royalty-free photos, videos, animation and graphics for your projects.",
     "price": 19,
     "period": "monthly",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Automation Toolkit",
-    "image": "https://example.com/images/automation.png",
+    "image": "https://assetstorev1-prd-cdn.unity3d.com/key-image/1a26197c-11bb-49d5-a588-787c947daf05.jpg",
     "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
     "price": 79,
     "period": "monthly",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Resume Builder Pro",
-    "image": "https://example.com/images/resume.png",
+    "image": "https://play-lh.googleusercontent.com/FGa9acEjopvdim_9hQ2ftnQH5As121IKlv--OdYmbXBctW75WnF7-ZXBSIx6jfsdsA",
     "description": "Create professional resumes and cover letters that land interviews.",
     "price": 15,
     "period": "one-time",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Social Media Content Kit",
-    "image": "https://example.com/images/social-kit.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVPK3PEFRv1odHDpElRZ_ye_RnOZBKX7Umg&s",
     "description": "Complete toolkit for creating engaging social media content across all platforms.",
     "price": 39,
     "period": "monthly",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Video Editor Cloud",
-    "image": "https://example.com/images/video-editor.png",
+    "image": "https://www.postud.io/_next/image/?url=https%3A%2F%2Fblogadmin.postud.io%2Fwp-content%2Fuploads%2F2024%2F09%2FFeatured-Image-2.png&w=3840&q=75",
     "description": "Professional cloud-based video editing with 4K export support.",
     "price": 199,
     "period": "yearly",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "SEO Master Suite",
-    "image": "https://example.com/images/seo-suite.png",
+    "image": "https://play-lh.googleusercontent.com/tzPy-6G-gM228miDPzaFcykZ2KdU5WWw8Yz61ZPdL_52TmSF0E6yZLmsHoIOvz4dAp82dhazRZsbNez6m5HW7g4=w240-h480-rw",
     "description": "Rank higher on search engines with our comprehensive SEO analysis tools.",
     "price": 59,
     "period": "monthly",
@@ -98,7 +98,7 @@
   {
     "id": 9,
     "name": "Coding Bootcamp Prep",
-    "image": "https://example.com/images/coding.png",
+    "image": "https://i.ytimg.com/vi/hankZBCB3xc/sddefault.jpg",
     "description": "Master the basics of HTML, CSS, and JS with 50+ hands-on projects.",
     "price": 89,
     "period": "one-time",
@@ -110,7 +110,7 @@
   {
     "id": 10,
     "name": "Email Marketing Guru",
-    "image": "https://example.com/images/email-guru.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPOes4VJ7hXPwzz7htCq8o0HnHbtSVWtwJZQ&s",
     "description": "Build high-converting email sequences and manage your subscribers.",
     "price": 45,
     "period": "monthly",
@@ -122,7 +122,7 @@
   {
     "id": 11,
     "name": "Cyber Security Bundle",
-    "image": "https://example.com/images/security.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmyBIGPKqmt7P-1HPL7XxSIvq65BLXblJmsg&s",
     "description": "Protect your digital assets with advanced encryption and firewall tools.",
     "price": 120,
     "period": "yearly",
@@ -134,7 +134,7 @@
   {
     "id": 12,
     "name": "Podcast Starter Kit",
-    "image": "https://example.com/images/podcast.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNTMWFqcP15bbBLirpu-F-2CzCObClUc8-ow&s",
     "description": "Everything you need to record, edit, and host your professional podcast.",
     "price": 25,
     "period": "monthly",
@@ -142,41 +142,5 @@
     "tagType": "best seller",
     "features": ["Unlimited hosting", "Noise reduction", "RSS distribution"],
     "icon": "https://example.com/icons/mic.png"
-  },
-  {
-    "id": 13,
-    "name": "Logo Design Engine",
-    "image": "https://example.com/images/logo-engine.png",
-    "description": "Create stunning logos for your brand using AI-driven design patterns.",
-    "price": 30,
-    "period": "one-time",
-    "tag": "New",
-    "tagType": "new",
-    "features": ["High-res SVG", "Color variations", "Brand guidelines"],
-    "icon": "https://example.com/icons/palette.png"
-  },
-  {
-    "id": 14,
-    "name": "Legal Template Library",
-    "image": "https://example.com/images/legal.png",
-    "description": "Protect your business with lawyer-approved contracts and agreements.",
-    "price": 150,
-    "period": "one-time",
-    "tag": "Popular",
-    "tagType": "popular",
-    "features": ["Global compliance", "Easy editing", "Lifetime updates"],
-    "icon": "https://example.com/icons/gavel.png"
-  },
-  {
-    "id": 15,
-    "name": "E-commerce Growth Pack",
-    "image": "https://example.com/images/ecommerce.png",
-    "description": "Scale your online store with marketing automation and sales funnel tools.",
-    "price": 99,
-    "period": "monthly",
-    "tag": "Best Seller",
-    "tagType": "best seller",
-    "features": ["Upsell tools", "Abandoned cart recovery", "CRM integration"],
-    "icon": "https://example.com/icons/cart.png"
   }
 ]

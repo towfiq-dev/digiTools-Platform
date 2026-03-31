@@ -11,7 +11,7 @@ const Cart = ({cart, addCarts, setAddCarts}) => {
       <p className="mb-3 font-semibold">Are you sure want to delete <span className='font-bold text-red-500'>{cart.name}</span> item?</p>
       <div className="flex gap-2">
         <button
-          className="bg-green-500 text-white px-3 py-1 rounded text-sm"
+          className="bg-green-500 text-white px-3 py-1 cursor-pointer rounded text-sm"
           onClick={() => {
            setAddCarts(filterArray)
            toast.success('Your item has been successfully deleted');
@@ -21,7 +21,7 @@ const Cart = ({cart, addCarts, setAddCarts}) => {
           Yes
         </button>
         <button
-          className="bg-red-500 text-white px-3 py-1 rounded text-sm"
+          className="bg-red-500 text-white px-3 py-1 cursor-pointer rounded text-sm"
           onClick={()=>{
           toast.error('Your item is Cancel')
           closeToast();

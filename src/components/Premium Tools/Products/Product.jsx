@@ -3,7 +3,7 @@ import Features from './Features';
 import { toast } from 'react-toastify';
 
 const Product = ({productData, addCarts, setAddCarts}) => {
-  const {name, image, description, price, period, tag, features} = productData
+  const {name, image, description, price, period, tag, features, tagType} = productData
   const [isBuy, setIsBuy] = useState(false)
   const buyNow=()=>{
     setIsBuy(true)
@@ -18,10 +18,17 @@ const Product = ({productData, addCarts, setAddCarts}) => {
     setAddCarts([...addCarts, productData])
   }
   return (
-    <div className='bg-gray-100 rounded-xl py-5 px-3 space-y-4'>
-      <div className='flex justify-between items-center'>
-      <img className='w-10 h-10 ml-2 mt-2 rounded-full' src={image} alt=""/>
-      <p className='border px-2 py-1.5 rounded-3xl .mt-\[-17px\]'>{tag}</p>
+    <div className='bg-gray-100 rounded-xl py-5 px-3 space-y-4 transition duration-300 transform hover:scale-100 hover:rotate-2'>
+      <div className='flex justify-between items-start'>
+      <img className='w-13 h-13 ml-2 mt-2 rounded-full' src={image} alt=""/>
+      <p className={`border px-2 py-1.5 font-bold rounded-3xl w-25 text-center -mt-3 
+        ${tagType === 'best seller'? 'bg-[#FEF3C6]' : 
+        tagType === 'popular'? 'bg-blue-200' : 
+        'bg-green-200'}
+        ${tagType === 'best seller'? 'text-[#BB4D00]' : 
+        tagType === 'popular'? 'text-[#9514FA]' : 
+        'text-green-600'}
+        `}>{tag}</p>
       </div>
       <h2 className='text-[20px] font-bold'>{name}</h2>
       <p className='text-gray-500'>{description}</p>

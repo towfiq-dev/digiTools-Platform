@@ -37,31 +37,28 @@ const [addCarts, setAddCarts] = useState([])
       ></Navbar>
       <Banner></Banner>
       <StatsSection></StatsSection>
-    <div className='text-center space-y-6 mb-10 mt-15'>
-    <div className='w-130 inline-block justify-center space-y-1.5'>
-    <h1 className='text-[35px] font-bold'>Premium Digital Tools</h1>
-    <p className='text-gray-400'>Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
-    </div>
-    <div className='flex justify-center gap-5 rounded-full'>
+<div className='text-center space-y-6 mb-10 mt-15 px-4'>
+  <div className='max-w-2xl mx-auto space-y-1.5'>
+    <h1 className='text-3xl md:text-[35px] font-bold'>Premium Digital Tools</h1>
+    <p className='text-gray-400'>Choose from our curated collection...</p>
+  </div>
+</div>
+
+<div className='flex justify-center gap-5 py-4'>
   <button 
     onClick={() => toolBtn(false)} 
-    className={`btn rounded-full ${!activeBtn ? 
-      'bg-[linear-gradient(to_right,#4F39F6,#9514FA)] text-white' 
-      : 'bg-gray-200'}`}
+    className={`btn rounded-full ${!activeBtn ? 'bg-[linear-gradient(to_right,#4F39F6,#9514FA)] text-white' : 'bg-gray-200'}`}
   >
     Products
   </button>
 
   <button 
     onClick={() => toolBtn(true)} 
-    className={`btn rounded-full ${activeBtn ? 
-      'bg-[linear-gradient(to_right,#4F39F6,#9514FA)] text-white' 
-      : 'bg-gray-200'}`}
+    className={`btn rounded-full ${activeBtn ? 'bg-[linear-gradient(to_right,#4F39F6,#9514FA)] text-white' : 'bg-gray-200'}`}
   >
     Cart {addCarts.length}
   </button>
-  </div>
-    </div>
+</div>
       {
         activeBtn === false?
         <Suspense 
