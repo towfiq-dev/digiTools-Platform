@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import Feature from './Feature';
 import { toast } from 'react-toastify';
-
+import { FaCheck } from 'react-icons/fa';
 const Card = ({card}) => {
   const {planName, tagline, price, billingCycle, features, buttonText, isPopular} = card
   const [pay, setPay] = useState('Start Pro Trial')
+  const [trial, setTrial] = useState(false)
   const handlePay=()=>{
-  
-   const confirmToast = ({ closeToast }) => (
+  const confirmToast = ({ closeToast }) => (
       <div className="p-2">
         <p className="mb-3 font-semibold">Do you want to make the free trial?</p>
         <div className="flex gap-2">
           <button
             className="bg-green-500 text-white px-3 py-1 cursor-pointer rounded text-sm"
             onClick={() => {
+              setTrial(true)
               setPay(pay);
               toast.success('Your free trial is Successfully done');
               closeToast();
@@ -34,7 +35,6 @@ const Card = ({card}) => {
         </div>
       </div>
     );
-  
     toast.info(confirmToast, {
       position: "top-center",
       autoClose: false,
@@ -59,7 +59,6 @@ const Card = ({card}) => {
       <h2>{billingCycle}</h2>
       </span>
       </div>
-    
     <ul className="mt-6 flex flex-col gap-2 text-xs">
     {
     features.map((feature, index)=> <Feature 
@@ -75,7 +74,13 @@ const Card = ({card}) => {
       className={`btn btn-primary btn-block rounded-full 
       ${isPopular === true? 'bg-white text-black' : 
       'bg-[linear-gradient(to_right,#4F39F6,#9514FA)]'}
-      `}>{buttonText}</button>
+      `} disabled={trial === true? true: false}>
+      {trial === false? 
+      <span>{buttonText}</span>: 
+      <span className='flex items-center gap-1 text-green-500'>
+      <FaCheck className='text-green-500'></FaCheck>Free Trial Successful  
+      </span>}
+      </button>
     </div>
   </div>
 </div>

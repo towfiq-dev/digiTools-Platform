@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Features from './Features';
 import { toast } from 'react-toastify';
-
+import { FaCheck } from 'react-icons/fa';
 const Product = ({productData, addCarts, setAddCarts}) => {
   const {name, image, description, price, period, tag, features, tagType} = productData
   const [isBuy, setIsBuy] = useState(false)
@@ -51,10 +51,13 @@ const Product = ({productData, addCarts, setAddCarts}) => {
       'bg-[linear-gradient(to_right,#4F39F6,#9514FA)]': 
       ''}`} 
       disabled={isBuy === true? true : false}>
-      {isBuy === false? 'Buy Now': 'Added to cart'}
+      {isBuy === false? 
+      'Buy Now': 
+      <span className='flex items-center gap-1'>
+      <FaCheck className='text-green-500'></FaCheck>Added to cart  
+      </span>}
       </button>
     </div>
   );
 };
-
 export default Product;
